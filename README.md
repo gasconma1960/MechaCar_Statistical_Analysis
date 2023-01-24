@@ -1,69 +1,81 @@
 # MechaCar_Statistical_Analysis
 
 # Background
+
 A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
 
-In this challenge, you’ll help Jeremy and the data analytics team do the following:
+In this challenge, I’ll help Jeremy and the data analytics team do the following:
 
-Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes.
-Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.
-Run t-tests to determine if the manufacturing lots are statistically different from the mean population.
-Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
-What You're Creating
-This new assignment consists of three technical analysis parts and a proposal for further statistical study. You’ll submit the following:
+  - Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes.
 
-Part 1: Linear Regression to Predict MPG
-Part 2: Summary Statistics on Suspension Coils
-Part 3: T-Test on Suspension Coils
-Part 4: Design a Study Comparing the MechaCar to the Competition
-Files
-Use the following link to download the Challenge data sets.
+  - Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots.
 
-Module 16 challenge starter codeLinks to an external site.
-Before You Start
-Create a new GitHub repository, "MechaCar_Statistical_Analysis," and initialize the repository with a README.
+  - Run t-tests to determine if the manufacturing lots are statistically different from the mean population.
 
-After you’ve completed the technical analysis for each part, provide a short summary of the results in the README.md of the analysis. For the final part, you’ll write up a short description of the study design for additional statistical analysis. In the written summaries, we would like you to think critically about your analysis, not demonstrate proficiency of automotive manufacturing.
+  - Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
 
-Instructions
-# Part 1: Linear Regression to Predict MPG
-The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. Using your knowledge of R, you’ll design a linear model that predicts the mpg of MechaCar prototypes using several variables from the MechaCar_mpg.csv file. Then, you’ll write a short interpretation of the multiple linear regression results in the README.md.
+# **Instructions**
+
+# **Part 1: Linear Regression to Predict MPG**
+The `MechaCar_mpg.csv` dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. Using my knowledge of R, I’ll design a linear model that predicts the mpg of MechaCar prototypes using several variables from the `MechaCar_mpg.csv` file. Then, I’ll write a short interpretation of the multiple linear regression results in the README.md.
 
 Follow the instructions below to complete Part 1.
 
-Technical Analysis
-Download the MechaCar_mpg.csv file, and place it in the active directory for your R session.
+## **Technical Analysis**
 
-Create a new RScript in your R source pane, name it MechaCarChallenge.RScript, and save it to your active directory.
+  1. Download the `MechaCar_mpg.csv` file, and place it in the active directory for your R session.
 
-NOTE
-Create a new RScript by going to the File menu. Select "New File," followed by "RScript," or you can click the icon in the top-left corner of the RStudio window. Note that the icon looks like a white square with a plus sign in the top left corner.
+  2. Create a new RScript in your R source pane, name it MechaCarChallenge.RScript, and save it to your active directory.
+  
+  ![image](https://user-images.githubusercontent.com/112348240/214206815-5e223719-4ab9-4435-8266-7609b020b257.png)
 
-Use the library() function to load the dplyr package.
+  ![image](https://user-images.githubusercontent.com/112348240/214206970-ee12b449-e51d-4f84-af9d-d13e4b11db85.png)
 
-Import and read in the MechaCar_mpg.csv file as a dataframe.
+  3. Use the `library()` function to load the `dplyr` package.
+  
+  ![image](https://user-images.githubusercontent.com/112348240/214207091-3fca8ddf-9b91-48e4-b0c1-8f2e512d52d3.png)
+  
+  4. Import and read in the `MechaCar_mpg.csv` file as a dataframe.
 
-Perform linear regression using the lm() function. In the lm() function, pass in all six variables (i.e., columns), and add the dataframe you created in Step 4 as the data parameter.
+  ![image](https://user-images.githubusercontent.com/112348240/214207295-6c1e100f-2711-4929-b14c-dd7ac186f5dc.png)
+  
+  ![image](https://user-images.githubusercontent.com/112348240/214207462-edf4a86f-f297-440c-acf6-a167d149a948.png)
+  
+  Better view of the screenshot of the Dataframe
+  
+  ![image](https://user-images.githubusercontent.com/112348240/213965576-b07c15c5-87d9-49f2-a904-527176d38d3f.png)
+  
+  5. Perform linear regression using the `lm()` function. In the `lm()` function, pass in all six variables (i.e., columns), and add the dataframe I created in Step 4 as the data parameter.
+  
+  6. Using the `summary()` function, determine the p-value and the r-squared value for the linear regression model.
 
-Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
+  ![image](https://user-images.githubusercontent.com/112348240/214208140-638a1223-ba4d-4a61-997f-28f747973f32.png)
+  
+  ![image](https://user-images.githubusercontent.com/112348240/214208651-d2c0a93a-1f2d-4319-80f9-177dd935e4a8.png)
 
-Save your MechaCarChallenge.RScript file to your GitHub repository.
+  
+  7. Save your `MechaCarChallenge.RScript` file to your GitHub repository.
 
-Written Summary
-In your README, create a subheading, ## Linear Regression to Predict MPG, and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+## **Linear Regression to Predict MPG** 
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+  - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+    - (Intercept)
+    - Mecha_table$vehicle_length
+    - Mecha_table$ground_clearance
 
-Is the slope of the linear model considered to be zero? Why or why not?
+  - Is the slope of the linear model considered to be zero? Why or why not?
+       >It is not specified whether the slope of the linear model is considered to be zero. The slope of the linear model is represented by the coefficient of the       predictor variable(s) in the model. In this case, the coefficients for Mecha_table$vehicle_length, Mecha_table$ground_clearance are non-zero, indicating that the       slope   of the linear model is not zero.
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+  - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+    >As for the effectiveness of the linear model in predicting mpg of MechaCar prototypes, it can be seen from the multiple R-squared value of 0.7149 that the model      explains 71.49% of the variation in mpg. The adjusted R-squared of 0.6825 also indicates that the model is a good fit to the data, however, it's not perfect, so        it's important to consider other factors. Additionally, some of the p-values for the predictor variables are not statistically significant, meaning that these          variables may not have a strong relationship with mpg.
 
-# Part 2: Create Visualizations for the Trip Analysis
-The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using your knowledge of R, you’ll create a summary statistics table to show:
+# **Part 2: Create Visualizations for the Trip Analysis**
 
-The suspension coil’s PSI continuous variable across all manufacturing lots.
+The MechaCar `Suspension_Coil.csv` dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using my knowledge of R, I’ll create a summary statistics table to show:
 
-The following PSI metrics for each lot: mean, median, variance, and standard deviation.
+   - The suspension coil’s PSI continuous variable across all manufacturing lots.
+
+   - The following PSI metrics for each lot: mean, median, variance, and standard deviation.
 
 Then, in the README.md, you’ll briefly detail and interpret the suspension coil summary statistics.
 
@@ -127,7 +139,7 @@ What data is needed to run the statistical test?
 
 ![image](https://user-images.githubusercontent.com/112348240/213965501-212ac5f9-2a79-4425-8001-17f93a58922b.png)
 
-![image](https://user-images.githubusercontent.com/112348240/213965576-b07c15c5-87d9-49f2-a904-527176d38d3f.png)
+
 ![image](https://user-images.githubusercontent.com/112348240/213965659-ee41f4a4-0ccc-49f6-8dc4-1d4bfa08c722.png)
 
 ![image](https://user-images.githubusercontent.com/112348240/213965785-075590fa-9ea1-4434-9001-21ef056c291d.png)
