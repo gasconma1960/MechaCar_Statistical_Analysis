@@ -64,10 +64,10 @@ Follow the instructions below to complete Part 1.
     - Mecha_table$ground_clearance
 
   - Is the slope of the linear model considered to be zero? Why or why not?
-       >It is not specified whether the slope of the linear model is considered to be zero. The slope of the linear model is represented by the coefficient of the       predictor variable(s) in the model. In this case, the coefficients for Mecha_table$vehicle_length, Mecha_table$ground_clearance are non-zero, indicating that the       slope   of the linear model is not zero.
+       >It is not specified whether the slope of the linear model is considered to be zero. The slope of the linear model is represented by the coefficient of the predictor variable(s) in the model. In this case, the coefficients for Mecha_table$vehicle_length, Mecha_table$ground_clearance are non-zero, indicating that the slope of the linear model is not zero.
 
   - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-    >As for the effectiveness of the linear model in predicting mpg of MechaCar prototypes, it can be seen from the multiple R-squared value of 0.7149 that the model      explains 71.49% of the variation in mpg. The adjusted R-squared of 0.6825 also indicates that the model is a good fit to the data, however, it's not perfect, so        it's important to consider other factors. Additionally, some of the p-values for the predictor variables are not statistically significant, meaning that these          variables may not have a strong relationship with mpg.
+    >As for the effectiveness of the linear model in predicting mpg of MechaCar prototypes, it can be seen from the multiple R-squared value of 0.7149 that the model explains 71.49% of the variation in mpg. The adjusted R-squared of 0.6825 also indicates that the model is a good fit to the data, however, it's not perfect, so it's important to consider other factors. Additionally, some of the p-values for the predictor variables are not statistically significant, meaning that these variables may not have a strong relationship with mpg.
 
 # **Part 2: Create Visualizations for the Trip Analysis**
 
@@ -77,12 +77,9 @@ The MechaCar `Suspension_Coil.csv` dataset contains the results from multiple pr
 
    - The following PSI metrics for each lot: mean, median, variance, and standard deviation.
 
-Then, in the README.md, you’ll briefly detail and interpret the suspension coil summary statistics.
+**Instructions
 
-Follow the instructions below to complete Part 2.
-
-Technical Analysis
-Download the Suspension_Coil.csv file, and place it in the active directory for your R session.
+#Part 2.
 
 In your MechaCarChallenge.RScript, import and read in the Suspension_Coil.csv file as a table.
 
