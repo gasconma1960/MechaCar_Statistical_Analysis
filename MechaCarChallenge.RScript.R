@@ -1,10 +1,11 @@
 library("dplyr")
+
 ## Read the CSV file
 Mecha_table <- read.csv(file='MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
 
 ## Linear Regression to Predict MPG
 summary(lm(Mecha_table$mpg~Mecha_table$vehicle_length + Mecha_table$vehicle_weight + Mecha_table$spoiler_angle + Mecha_table$ground_clearance + Mecha_table$AWD, Mecha_table))
-View(data_frame)
+
 
 library("tidyverse")
 ## Read the CSV file
@@ -23,3 +24,12 @@ t.test(subset(Suspension_Coil_table, Manufacturing_Lot=="Lot1")$PSI,mu=1500)
 t.test(subset(Suspension_Coil_table, Manufacturing_Lot=="Lot2")$PSI,mu=1500)
 ## T-Tests Lot3
 t.test(subset(Suspension_Coil_table, Manufacturing_Lot=="Lot3")$PSI,mu=1500)
+
+library(ggplot2)
+
+#Read the data
+Mecha_table <- read.csv(file='MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
+
+# Create the plot object
+ggplot(data = Mecha_table, aes(x = vehicle_length, y = mpg)) + geom_point() + ggtitle("MechaCar MPG vs Vehicle Length") + xlab("Vehicle Length (inches)") +   ylab("MPG")
+
