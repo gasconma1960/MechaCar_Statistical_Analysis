@@ -163,6 +163,8 @@ Follow the instructions below to complete Part 4.
   - Libraries use :dplyr, tidyverse and ggplot2
   - Suspension_Coil.csv file
   - MechaCar_mpg.csv file
+  - 
+Link to my GitHub page: https://gasconma1960.github.io/MechaCar_Statistical_Analysis/
 
 **Module 16 Challenge**
 
