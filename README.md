@@ -1,5 +1,7 @@
 # MechaCar_Statistical_Analysis
 
+![image](https://user-images.githubusercontent.com/112348240/215304551-b95fa997-30c8-48b3-bbb6-8a63479442de.png)
+
 # Background
 
 A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
@@ -148,19 +150,22 @@ Follow the instructions below to complete Part 4.
  
   The null hypothesis for this study is that the MechaCar is no different from its competitors in terms of the above-mentioned metrics. The alternative hypothesis is that the MechaCar outperforms its competitors in at least one of these metrics
 
-    - What statistical test would you use to test the hypothesis? And why?
-      We will use a two-sample t-test for each of the metrics. This statistical test is appropriate for comparing the means of two groups, and it allows us to determine whether the difference in means is statistically significant.
+- What statistical test would you use to test the hypothesis? And why?
+    
+  We will use a two-sample t-test for each of the metrics. This statistical test is appropriate for comparing the means of two groups, and it allows us to determine whether the difference in means is statistically significant.
 
-    - What data is needed to run the statistical test?
-      The data needed for this study includes the values for the above-mentioned metrics for the MechaCar and its competitors. This data can be obtained from various sources, such as company websites, consumer reports, and independent testing organizations.
-
+- What data is needed to run the statistical test?
+    
+  The data needed for this study includes the values for the above-mentioned metrics for the MechaCar and its competitors. This data can be obtained from various sources, such as company websites, consumer reports, and independent testing organizations.
+  
+# **Sources:**
+  - RStudio,
+  - Libraries use :dplyr, tidyverse and ggplot2
+  - Suspension_Coil.csv file
+  - MechaCar_mpg.csv file
 
 **Module 16 Challenge**
 
 By **Marisol Gascon Linarez**
 
 **UCF Bootcamp Data Visualization and Analytics**
-
-
-
-
